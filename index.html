@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Loops</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" id="style_sheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="content_container">
+        <!-- content box split into input and output section-->
+        <div id="input_container">
+            <!--Input headings and info-->
+            <div id="input_info">
+                <h1>Fruit Loops</h1>
+                <p>Type in a fruit below to add to your fruit list</p>
+            </div>
+            <div id="input_section">
+                <div id="user_input">
+                    <!--Form for typed user input-->
+                    <div id="form_div">
+                        <form name="fruit_form" method="GET" action="#">
+                            <div id="fruit_input">
+                                <label>Input fruit to add to list: </label><br>
+                                <input type="text" id="input_fruit" name="input_fruit" placeholder="Enter a fruit" required>
+                            </div>
+                            <!--Button to submit typed input-->
+                            <div id="submit_fruit_button">
+                                <input type="button" value="Submit" onclick="AddFruit()">
+                            </div>
+                        </form>
+                    </div>
+                    <!--Button to clear all previous inputs-->
+                    <div id="clear_list_div">
+                        <input type="button" value="Clear Current List" onclick="ClearFruit()">
+                    </div> 
+                    <!--Button to run fruit loops process-->
+                    <div id="fruit_loop_button">
+                        <input type="button" value="Fruit Loops!" onclick="FruityLoops(fruits)">
+                    </div> 
+                </div>
+                <!--Display box to show all fruit currently in fruit loops list-->
+                <div id="current_input">
+                    <p>Current fruit in list:</p>
+                    <div id="current_input_box">
+                        <div id="input_list_contents">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Output section - blank initially, will be changed by script on running fruit loops-->
+        <div id="output_container">
+            <div id="output_box">
+                <div id="output_contents">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Reference for background image-->
+    <div id="image_attribution">
+        <p>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-kawaii-fruit-pack_4245753.htm">Freepik</a></p>
+    </div>
+    
+</body>
+</html>
