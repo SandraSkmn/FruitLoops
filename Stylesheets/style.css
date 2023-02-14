@@ -8,7 +8,7 @@
 /*Styling for body with background image and flex */
 
 body {
-    background-image: url(../Images/background.jpg);
+    background-image: url('../Images/background.jpg');
     background-size: 600px;
     display: flex;
     justify-content: center;
